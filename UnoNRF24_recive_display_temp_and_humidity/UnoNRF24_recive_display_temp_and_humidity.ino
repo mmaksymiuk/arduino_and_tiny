@@ -2,7 +2,7 @@
 #include <RadioNRF24.h> //https://github.com/nettigo/RadioNRF24
 
 #define BUFF_SIZE 40
-#define LED   13 // build in waveshar uno plus led
+#define LED   13 // build in waveshare uno plus led
 #define CSN_PIN 8 //plug here CSN ping from NRF24
 #define CE_PIN 7 //plug here CE pin from NRF24
 
@@ -44,7 +44,7 @@ void loop() {
   int cnt = RadioNRF24.available();
   Serial.print("read bytes ");
   Serial.print(cnt);
-  //if something was recived we want to read it.
+  //if something was received we want to read it.
   if (cnt) { 
     Serial.print(F("avail: "));
     Serial.println(cnt, DEC);// should read 9 bytes - 1 int, 2 float numbers.

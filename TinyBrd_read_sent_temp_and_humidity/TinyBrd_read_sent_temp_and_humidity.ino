@@ -17,7 +17,7 @@ struct Payload {
   byte id;
   float temp;
   float humidity;
-} payload; //data struct, counter, temparature and humidity from DHT22
+} payload; //data struct, counter, temperature and humidity from DHT22
 
 
 void lightOn(unsigned tme = 100) {
@@ -63,7 +63,7 @@ void setup() {
 }
 
 void loop() {
-  lightOn(); //show that we read data from sensor and sent throw NRF24
+  lightOn(); //show that we read data from sensor and sent threw NRF24
   if(counter < 100) {
     counter++;
   } else {
